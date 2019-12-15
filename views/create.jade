@@ -1,0 +1,25 @@
+h Create Lightbulb
+form(action="/create", method="post")
+    p ID
+    input(name="id", type="text")
+    br 
+    p Typenummer
+    input(name="typenummer", type="text")
+    br
+    p Software Version
+    input(name="softwareVersion", type="text")
+    br
+    p Name
+    input(name="name", type="text")
+    br
+    p Lysintensitet
+    input(name="lysintensitet", type="text")
+    br
+    p Farve
+    input(name="farve", type="text")
+    br
+    p Pærer tilstand
+    select(name = `select` class='select')
+      option(value="true") Tændt
+      option(value="false") Slukket
+    input(type="submit", value="Send data" class="btn") 
