@@ -4,18 +4,21 @@ block content
     table
         tr  
             th id
-            th Typenummer
+            th Typenumber
             th Softwareversion
             th Name
             th Lysintensitet
             th Farve
             th On
-        each bulb in bulbs //THIS IS MY JS
+        each bulb in bulbs
             tr
                 td=bulb.id
-                td=bulb.Typenummer
+                td=bulb.Typenumber
                 td=bulb.SoftwareVersion
                 td=bulb.Name
                 td=bulb.Lysintensitet
                 td=bulb.Farve
-                td=bulb.On
+                if bulb.On
+                    td="On"
+                else
+                    td="off"
